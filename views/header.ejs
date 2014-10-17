@@ -1,0 +1,29 @@
+<header id="header">
+    <div id="header2">
+        <header>
+            <section id="logo">
+                <div class="header-wrapper">
+                    <ul>
+                        <li class="logo-main"><a href="#"><img/></a>
+                        </li>
+                        <div class="auth">
+
+                            <% if (req.user) { %> <li><a href="/user/logout">Logout</a></li> <% } %>
+                            <% if (!req.user) { %><li class="logo-help"><a href="/signup">Sign Up </a></li><li class="logo-signin"><a href="/login">Log In </a></li><% } %>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section id="navigation">
+                <div class="header-nav">
+                    <a class="" href="#">About Us</a>
+                    <a class="" href="#">Your Activities</a>
+                    <a class="" href="#">Your Account</a>
+                    <a class="" href="#">Analytics</a>
+                    <a class="" href="#">Donate</a>
+                    <a class="" href="#">Events</a>
+                </div>
+            </section>
+        </header>
+    </div>
+</header>

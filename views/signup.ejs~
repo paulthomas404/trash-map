@@ -1,0 +1,238 @@
+<style>
+
+fieldset {
+	border: 0;
+}
+
+form input.error {
+    border: 1px dotted #E43434 !important;
+}
+
+form label.error {
+    color: #E43434;
+    font-size: 14px;
+}
+
+.wrapper-join-external {
+	padding: 30px 0 0px 0;
+	position: relative;
+	text-align: center;
+}
+
+.wrapper-join-external h1{
+	font-size: 46px;
+}
+
+.wrapper-form {
+	width: 300px;
+	padding: 25px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 5px;
+}
+
+#signup-options {
+	text-align: center;
+}
+
+.wrapper-facebook {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.btn-social.facebook { 
+	color: #f1f1f1;
+	text-shadow: 0 1px #173B86;
+	border: 1px solid transparent;
+	background: linear-gradient(to bottom, #4D78CE 0%, #456fa7 100%);
+}
+
+.btn-social.facebook:hover { 
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+.btn-social.facebook:after {
+	background: url(/images/fb-icon.png) no-repeat;
+	border-right: 1px solid #5272AA;
+}
+
+.btn-social.facebook:visited {
+	color: #f1f1f1;
+}
+
+.btn-social {
+	height: 52px;
+	padding: 0 18px 0 62px;
+	line-height: 50px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.btn-social:after {
+	height: 48px;
+	width: 48px;
+	position: absolute;
+	left: 2px;
+	top: 1px;
+	content: " ";
+}
+
+.sign-up-divider {
+	height: 2px;
+	width: 100%;
+	margin: 25px 0;
+	text-align: center;
+}
+
+.sign-up-divider span {
+	padding: 0 10px;
+	font-size: 16px;
+	position: relative;
+	top: -11px;
+}
+
+.sign-up-email {
+	text-align: center;
+	font-size: 16px;
+	display: block;
+}
+.form-stacked .wrapper-input {
+	min-height: 32px;
+}
+
+.wrapper-input {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.form-stacked input.xlarge[type="text"], .form-stacked input.xlarge[type="email"], .form-stacked input.xlarge[type="password"] {
+	height: 39px;
+	padding: 8px 10px;
+	line-height: 26px;
+	font-size: 16px;
+}
+
+.form-signup input[type="text"], .form-signup input[type="email"], .form-signup input[type="password"] {
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 3px;
+	outline: none;
+	color: #333;
+	font-size: 18px;
+	font-weight: 400;
+	background: #f1f1f1;
+	box-sizing: border-box;
+}
+
+.next-wrap {
+	margin-top: 15px;
+}
+
+.wrapper-form .btn.large {
+	height: 42px;
+	width: 150px;
+	font-weight: 500;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	background: #2AB558;
+	background-image: linear-gradient(bottom, #38AD5F 0%, #2AB558 100%);
+}
+
+.wrapper-form .btn.large:active {
+	border: 1px solid #212925;
+	-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .2);
+}
+
+.wrapper-form .btn.large:hover {
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #32A358), color-stop(1, #2AB558) );
+}
+
+.btn.primary {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba( 0, 0, 0, 0.29 );
+}
+
+p.message-legal {
+	font-size: 0.65em;
+	margin: 0;
+	margin-top: 10px;
+}
+
+</style>
+
+<div id="page" class="content" role="document">
+  <article class="grid">
+    <section id="body" class="body without-sidebar" role="main">
+      
+        <header class="front-header">
+        </header>
+        <div class="wrapper-join-external">
+            <h1 class="sign-up-header">Join Trash Map today.</h1>
+        </div>
+        <section class="wrapper-form">
+                        <div id="signup-options">
+                <div class="wrapper-facebook">
+                    <a href="/user/facebook" class="connect-service btn-social facebook">Connect with <strong>Facebook</strong></a>
+                </div>
+                <div class="sign-up-divider">
+                    <span>Or</span>
+                </div>
+                <span id="sign-up-email" class="sign-up-email">Sign up using Email</span>
+            </div>
+                        <form class="form-signup" id="signup-form" method="post" action="/user/signup">
+                <fieldset id="user-data-form" class="form-stacked form-step-wrap">
+                                        <div class="wrapper-input" class="km_include">
+                        <div class="input">
+                            <input class="xlarge" id="name" name="name" type="text" maxlength="64" value="" placeholder="Name" required>
+                            <div class="input-state"></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-input">
+                        <div class="input">
+                            <input class="xlarge" id="email" name="email" type="email" maxlength="64" value="" placeholder="Email" data-help="No spam, we promise!" required>
+                            <div class="input-state"></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-input">
+                        <div class="input">
+                            <input class="xlarge" id="password" name="password" type="password" maxlength="16" value="" placeholder="Password" data-help="Choose a new, strong password." required>
+                            <div class="input-state"></div>
+                        </div>
+                    </div>
+		                        <div class="wrapper-input">
+                        <div class="input">
+                            <input class="xlarge" id="confirm-password" name="confirm_password" type="password" maxlength="16" value="" placeholder="Confirm Password" data-help="Confirm your password." required>
+                            <div class="input-state"></div>
+                        </div>
+                    </div>
+                    <div class="next-wrap">
+                        <input type="submit" class="btn primary large submit" value="Sign Up" data-type="step 1"/>
+                        <p class="hidden fadeOut error-message"></p>
+                        <p class="message-legal">
+                            By clicking "Sign Up" you agree to TrashMap's <a href="/terms">Terms of Service</a> for the country of your residency. Please also review our <a href="/privacy">Privacy Policy</a>.
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+            <script>
+                $("#signup-form").validate({
+                    rules: {
+                        password: "required",
+                        confirm_password: {
+                            equalTo: "#password"
+                        }
+                    }
+                });
+            </script>
+            <% if(typeof error == 'object' && error){%><div class="error-message" id="connection-error"><p><%= error%></p></div><%}%>
+        </section>
+
+    </section>
+  </article>
+</div>

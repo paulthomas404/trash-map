@@ -1,0 +1,7 @@
+node_modules/
+.tmp/
+.idea/
+
+.editorconfig
+
+config/accounts.js

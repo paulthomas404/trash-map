@@ -1,0 +1,218 @@
+<style>
+
+fieldset {
+	border: 0;
+}
+
+form input.error {
+    border: 1px dotted #E43434 !important;
+}
+
+form label.error {
+    color: #E43434;
+    font-size: 14px;
+}
+
+.wrapper-join-external {
+	padding: 30px 0 0px 0;
+	position: relative;
+	text-align: center;
+}
+
+.wrapper-join-external h1{
+	font-size: 46px;
+}
+
+.wrapper-form {
+	width: 300px;
+	padding: 25px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 5px;
+}
+
+#signin-options {
+	text-align: center;
+}
+
+#signin-options h3{
+	color: rgb(84, 48, 26);
+}
+
+.wrapper-facebook {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.btn-social.facebook { 
+	color: #f1f1f1;
+	text-shadow: 0 1px #173B86;
+	border: 1px solid transparent;
+	background: linear-gradient(to bottom, #4D78CE 0%, #456fa7 100%);
+}
+
+.btn-social.facebook:hover { 
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+.btn-social.facebook:visited {
+    color: #f1f1f1;
+}
+
+.btn-social.facebook:after {
+	background: url(/images/fb-icon.png) no-repeat;
+	border-right: 1px solid #5272AA;
+}
+
+.btn-social {
+	height: 52px;
+	padding: 0 18px 0 62px;
+	line-height: 50px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.btn-social:after {
+	height: 48px;
+	width: 48px;
+	position: absolute;
+	left: 2px;
+	top: 1px;
+	content: " ";
+}
+
+.sign-in-email {
+	text-align: center;
+	font-size: 16px;
+	display: block;
+}
+
+.error-message p {
+    color: #E43434;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.form-stacked .wrapper-input {
+	min-height: 32px;
+}
+
+.wrapper-input {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.form-stacked input.xlarge[type="text"], .form-stacked input.xlarge[type="email"], .form-stacked input.xlarge[type="password"] {
+	height: 39px;
+	padding: 8px 10px;
+	line-height: 26px;
+	font-size: 16px;
+}
+
+.form-signin input[type="text"], .form-signin input[type="email"], .form-signin input[type="password"] {
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 3px;
+	outline: none;
+	color: #333;
+	font-size: 18px;
+	font-weight: 400;
+	background: #f1f1f1;
+	box-sizing: border-box;
+}
+
+.form-signin .action {
+	margin-top: 13px;
+	float: right;
+	color: #aeaeae;
+	margin-left: 20px;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.next-wrap {
+	margin-top: 15px;
+}
+
+.wrapper-form .btn.large {
+	height: 42px;
+	width: 150px;
+	font-weight: 500;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	background: #2AB558;
+	background-image: linear-gradient(bottom, #38AD5F 0%, #2AB558 100%);
+}
+
+.wrapper-form .btn.large:hover {
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #32A358), color-stop(1, #2AB558) );
+}
+
+.btn.primary {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba( 0, 0, 0, 0.29 );
+}
+
+p.message-legal {
+	font-size: 0.65em;
+	margin: 0;
+	margin-top: 10px;
+}
+
+</style>
+
+<div id="page" class="content" role="document">
+  <article class="grid">
+    <section id="body" class="body without-sidebar" role="main">
+      
+        <header class="front-header">
+        </header>
+        <div class="wrapper-join-external">
+            <h1 class="sign-in-header">Sign in to Trash Map</h1>
+        </div>
+        <section class="wrapper-form">
+                        <div id="signin-options">
+                <div class="wrapper-facebook">
+                    <a href="/user/facebook" class="connect-service btn-social facebook">Sign In with <strong>Facebook</strong></a>
+                </div>
+                    <h3>Or</h3>
+            </div>
+                        <form class="form-signin" id="signin-form" method="post" action="/user/local" novalidate>
+                <fieldset id="user-data-form" class="form-stacked form-step-wrap">
+                    <% if(typeof error != 'undefined' && error){%><div class="error-message" id="connection-error"><p><%= error%></p></div><%}%>
+
+                    <div class="wrapper-input">
+                        <div class="input">
+                            <input class="xlarge" id="email" name="email" type="email" maxlength="64" value="" placeholder="Email" data-help="No spam, we promise!" required>
+                            <div class="input-state"></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-input">
+                        <div class="input">
+                            <input class="xlarge" id="password" name="password" type="password" maxlength="16" value="" placeholder="Password" data-required="true" data-help="Choose a new, strong password." required>
+			    <a class="action" tabindex="-1" href="/reset-password">Forgot your password?</a>	
+                            <div class="input-state"></div>
+                        </div>
+                    </div>
+                    <div class="next-wrap">
+                        <input type="submit" class="btn primary large submit" value="Sign In" data-type="step 1"/>
+                        <p class="hidden fadeOut error-message"></p>
+                    </div>
+                </fieldset>
+            </form>
+            <script>
+                $("#signin-form").validate();
+            </script>
+        </section>
+
+    </section>
+  </article>
+</div>
+
