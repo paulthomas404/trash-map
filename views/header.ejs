@@ -3,15 +3,12 @@
         <header>
             <section id="logo">
                 <div class="header-wrapper">
-                    <ul>
-                        <li class="logo-main"><a href="#"><img/></a>
-                        </li>
-                        <div class="auth">
+                        <a href="#"><img/></a>
+                        <span class="auth">
 
-                            <% if (req.user) { %> <li><a href="/user/logout">Logout</a></li> <% } %>
-                            <% if (!req.user) { %><li class="logo-help"><a href="/signup">Sign Up </a></li><li class="logo-signin"><a href="/login">Log In </a></li><% } %>
-                        </div>
-                    </ul>
+                            <% if (req.user) { %> <a href="/user/logout">Logout</a> <% } %>
+                            <% if (!req.user) { %><a href="/signup" class="logo-signup">Sign Up </a><a href="/login" class="logo-signin">Log In </a><% } %>
+                        </span>
                 </div>
             </section>
             <section id="navigation">

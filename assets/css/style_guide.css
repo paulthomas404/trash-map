@@ -82,17 +82,14 @@ input::-webkit-input-placeholder { color: rgb(160, 144, 134); }
 .webkit .sg-form .file-field-field { margin-top: 12px; }
 .webkit .sg-form .file-field-field .field-element { font-size: 16px; color: rgb(84, 48, 26); height: 22px; border: none; }
 #header { margin-bottom: 0px; font-family: museo-sans, Tahoma, sans-serif; }
-.header-wrapper { margin: 0px auto; }
+.header-wrapper { width: 60%; margin-left: auto; margin-right: auto; }
 #logo { overflow: hidden; text-transform: uppercase; font-weight: 500; letter-spacing: 1px; padding: 30px 10px; cursor: pointer; }
-#logo .logo-main { text-align: left; }
-#logo .auth { text-align: right; }
-#logo ul { list-style-type: none; display: inline; padding: 0px; margin: 0px; width: 74%; }
-#logo ul li { list-style-type: none; display: inline-block; float: left; font-size: 13px; font-weight: 500; }
+#logo .auth { font-size: 13px; font-weight: 500; float: right; }
 #logo a {  color: rgb(81, 53, 41); text-decoration: none; }
 #logo a:hover { color: rgb(243, 115, 33); }
-.logo-help { padding: 0px 10px 0px 0px; line-height: 16px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(215, 205, 202); }
-.logo-signin { padding: 0px 0px 0px 10px; line-height: 16px; }
-.nav-wrapper { width: 980px; margin: 0px auto; position: relative; }
+#logo .logo-signup { padding: 0px 10px 0px 0px; line-height: 16px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(215, 205, 202); }
+#logo .logo-signin { padding: 0px 0px 0px 10px; line-height: 16px; }
+#navigation .nav-wrapper { width: 980px; margin: 0px auto; position: relative; }
 #navigation .header-nav { margin-left: auto; margin-right: auto; width: 69%; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(242, 238, 236); }
 #navigation .header-nav a { color: rgb(81, 53, 41); text-decoration: none; border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: white; padding: 0px 0px 2px; text-transform: uppercase; font-weight: 500; font-size: 14px; margin: 0px -2px 0px 56px; padding-bottom: 7px; }
 #navigation .header-nav a:hover { color: rgb(243, 115, 33); }
@@ -119,7 +116,7 @@ input::-webkit-input-placeholder { color: rgb(160, 144, 134); }
 .footer-popup #footer .copyright { margin-top: 8px; padding-right: 5px; color: rgb(243, 115, 33); font-size: 13px; }
 .footer-popup #footer .copyright .trademarks { display: none; }
 #marquee-area hr { margin: 2px 0px 0px; border-width: 0px 0px 10px; border-bottom-style: solid; border-bottom-color: rgb(238, 53, 36); }
-#marquee { height: 390px; -webkit-background-size: cover; border-bottom-width: 2px !important; border-bottom-style: solid !important; border-bottom-color: rgb(235, 230, 229) !important; background-size: cover; }
+#marquee { height: 430px; width: 85%; margin-left: auto; margin-right: auto; -webkit-background-size: cover; border-bottom-width: 2px !important; border-bottom-style: solid !important; border-bottom-color: rgb(235, 230, 229) !important; background-size: cover; }
 #map-canvas { height: 100%; }
 .stack-shipping { text-align: left; padding: 30px 0px 20px 340px; min-height: 175px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(235, 230, 229); margin: 0px 0px 30px; overflow: hidden; }
 .stack-shipping p { font-size: 14px; margin-bottom: 2px; }
