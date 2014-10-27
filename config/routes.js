@@ -44,6 +44,10 @@ module.exports.routes = {
         view: 'signup'
     },
 
+    '/aboutus': {
+        view: 'aboutus'
+    },
+
     'post /user/local':{
         controller:'UserController',
         action:'local'
